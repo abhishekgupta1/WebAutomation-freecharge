@@ -1,13 +1,12 @@
 import Constants.Constants;
 import org.testng.Assert;
-import org.testng.annotations.Test;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.json.simple.JSONObject;
 
 
-public class PatchTeams {
+public class PutTeams {
 
 
     public void UpdateTeamID(){
@@ -23,7 +22,9 @@ public class PatchTeams {
         requestParams.put("privacy", "closed");
 
         request.body(requestParams.toJSONString());
-        Response response = request.put("/PATCH/"+ TeamID);
+        RestAssured.given(). header("Authorization", Constants.Authorization_Token);
+
+        Response response = request.put("/PATCH/"+ "/teams" + TeamID);
 
         int statusCode = response.getStatusCode();
         System.out.println(response.asString());
