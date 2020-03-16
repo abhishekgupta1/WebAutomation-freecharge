@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Sanity Suite" parallel="none">
+	<test name="start emu">
+		<classes>
+			<class name="constants.StartEmu" />
+		</classes>
+	</test>
+	<test parallel="none" name="Login and register test cases for sanity">
+		<classes>
+			<class name="newTestCases.getRequest" />
+		</classes>
+	</test>
+	<test name="stop emu">
+		<classes>
+			<class name="constants.StopEmu" />
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Sanity Suite]">
+  <test thread-count="5" name="Login and register test cases for sanity(failed)">
+    <classes>
+      <class name="newTestCases.getRequest">
+        <methods>
+          <include name="CheckResult"/>
+          <include name="ForResult"/>
+          <include name="SetUp"/>
+          <include name="xpathValidation"/>
+        </methods>
+      </class> <!-- newTestCases.getRequest -->
+    </classes>
+  </test> <!-- Login and register test cases for sanity(failed) -->
+</suite> <!-- Failed suite [Sanity Suite] -->

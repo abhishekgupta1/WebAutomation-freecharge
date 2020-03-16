@@ -1,21 +1,24 @@
-import Constants.Constants;
+package TestCases;
+import org.testng.Assert;
+
+import constants.Constants;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.json.simple.JSONObject;
-import org.testng.Assert;
-import org.testng.annotations.Test;
 
-public class PostCreateTeam {
 
-    @Test
-    public void PostCreateTeam()
-    {
+public class PutTeams {
+
+
+    public void UpdateTeamID(){
+        int TeamID = 3708330;
+
         RestAssured.baseURI = Constants.BASEURI;
         RequestSpecification request = RestAssured.given();
 
         JSONObject requestParams = new JSONObject();
-        requestParams.put("name", "SRE"); // Cast
+        requestParams.put("name", "New Team Four"); // Cast
         requestParams.put("description", "A great team");
         requestParams.put("permission", "admin");
         requestParams.put("privacy", "closed");
@@ -23,15 +26,11 @@ public class PostCreateTeam {
         request.body(requestParams.toJSONString());
         RestAssured.given(). header("Authorization", Constants.Authorization_Token);
 
-
-        Response response = request.post("/orgs/ComapnyName/teams");
-
+        Response response = request.put("/PATCH/"+ "/teams" + TeamID);
 
         int statusCode = response.getStatusCode();
-        Assert.assertEquals(statusCode, "201");
-        String successCode = response.jsonPath().get("SuccessCode");
-        Assert.assertEquals( "Correct Success code was returned", successCode, "OPERATION_SUCCESS");
+        System.out.println(response.asString());
+        Assert.assertEquals(statusCode, 201);
+
     }
-
 }
-
