@@ -2,110 +2,110 @@
 <testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Sanity Suite" duration-ms="3484" started-at="2020-03-16T14:33:47Z" finished-at="2020-03-16T14:33:50Z">
+  <suite name="Sanity Suite" duration-ms="3206" started-at="2020-03-16T16:36:45Z" finished-at="2020-03-16T16:36:48Z">
     <groups>
     </groups>
-    <test name="start emu" duration-ms="193" started-at="2020-03-16T14:33:47Z" finished-at="2020-03-16T14:33:47Z">
-      <class name="constants.StartEmu">
-        <test-method status="PASS" signature="startEmuWithServices()[pri:0, instance:constants.StartEmu@57fffcd7]" name="startEmuWithServices" duration-ms="170" started-at="2020-03-16T14:33:47Z" finished-at="2020-03-16T14:33:47Z">
+    <test name="start of the API package" duration-ms="151" started-at="2020-03-16T16:36:45Z" finished-at="2020-03-16T16:36:45Z">
+      <class name="helpers.ExtentStartMethod">
+        <test-method status="PASS" signature="startEmuWithServices()[pri:0, instance:helpers.ExtentStartMethod@61f8bee4]" name="startEmuWithServices" duration-ms="134" started-at="2020-03-16T16:36:45Z" finished-at="2020-03-16T16:36:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startEmuWithServices -->
-      </class> <!-- constants.StartEmu -->
-    </test> <!-- start emu -->
-    <test name="Login and register test cases for sanity" duration-ms="2909" started-at="2020-03-16T14:33:47Z" finished-at="2020-03-16T14:33:50Z">
-      <class name="newTestCases.getRequest">
-        <test-method status="PASS" signature="SetUp()[pri:0, instance:newTestCases.getRequest@551aa95a]" name="SetUp" is-config="true" duration-ms="22" started-at="2020-03-16T14:33:47Z" finished-at="2020-03-16T14:33:47Z">
+      </class> <!-- helpers.ExtentStartMethod -->
+    </test> <!-- start of the API package -->
+    <test name="test cases for sanity" duration-ms="2770" started-at="2020-03-16T16:36:45Z" finished-at="2020-03-16T16:36:47Z">
+      <class name="TestCases.getRequest">
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:TestCases.getRequest@ea1a8d5]" name="SetUp" is-config="true" duration-ms="23" started-at="2020-03-16T16:36:45Z" finished-at="2020-03-16T16:36:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method status="PASS" signature="ForResult(org.testng.ITestResult)[pri:0, instance:newTestCases.getRequest@551aa95a]" name="ForResult" is-config="true" duration-ms="6" started-at="2020-03-16T14:33:47Z" finished-at="2020-03-16T14:33:47Z">
+        <test-method status="PASS" signature="ForResult(org.testng.ITestResult)[pri:0, instance:TestCases.getRequest@ea1a8d5]" name="ForResult" is-config="true" duration-ms="2" started-at="2020-03-16T16:36:45Z" finished-at="2020-03-16T16:36:45Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=getOkRequest status=SUCCESS method=getRequest.getOkRequest()[pri:1, instance:newTestCases.getRequest@551aa95a] output={null}]]]>
+                <![CDATA[[TestResult name=getOkRequest status=SUCCESS method=getRequest.getOkRequest()[pri:1, instance:TestCases.getRequest@ea1a8d5] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ForResult -->
-        <test-method status="PASS" signature="getOkRequest()[pri:1, instance:newTestCases.getRequest@551aa95a]" name="getOkRequest" duration-ms="1906" started-at="2020-03-16T14:33:47Z" description="get Ok Request" finished-at="2020-03-16T14:33:49Z">
+        <test-method status="PASS" signature="getOkRequest()[pri:1, instance:TestCases.getRequest@ea1a8d5]" name="getOkRequest" duration-ms="1659" started-at="2020-03-16T16:36:45Z" description="get Ok Request" finished-at="2020-03-16T16:36:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getOkRequest -->
-        <test-method status="PASS" signature="CheckResult(org.testng.ITestResult)[pri:0, instance:newTestCases.getRequest@551aa95a]" name="CheckResult" is-config="true" duration-ms="7" started-at="2020-03-16T14:33:49Z" finished-at="2020-03-16T14:33:49Z">
+        <test-method status="PASS" signature="CheckResult(org.testng.ITestResult)[pri:0, instance:TestCases.getRequest@ea1a8d5]" name="CheckResult" is-config="true" duration-ms="11" started-at="2020-03-16T16:36:46Z" finished-at="2020-03-16T16:36:46Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=getOkRequest status=SUCCESS method=getRequest.getOkRequest()[pri:1, instance:newTestCases.getRequest@551aa95a] output={null}]]]>
+                <![CDATA[[TestResult name=getOkRequest status=SUCCESS method=getRequest.getOkRequest()[pri:1, instance:TestCases.getRequest@ea1a8d5] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheckResult -->
-        <test-method status="PASS" signature="ForResult(org.testng.ITestResult)[pri:0, instance:newTestCases.getRequest@551aa95a]" name="ForResult" is-config="true" duration-ms="1" started-at="2020-03-16T14:33:49Z" finished-at="2020-03-16T14:33:49Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=schemaValidation status=SUCCESS method=getRequest.schemaValidation()[pri:2, instance:newTestCases.getRequest@551aa95a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ForResult -->
-        <test-method status="PASS" signature="schemaValidation()[pri:2, instance:newTestCases.getRequest@551aa95a]" name="schemaValidation" duration-ms="491" started-at="2020-03-16T14:33:49Z" description="schema Validation" finished-at="2020-03-16T14:33:49Z">
+        <test-method status="PASS" signature="schemaValidation()[pri:2, instance:TestCases.getRequest@ea1a8d5]" name="schemaValidation" duration-ms="481" started-at="2020-03-16T16:36:46Z" description="schema Validation of the api" finished-at="2020-03-16T16:36:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- schemaValidation -->
-        <test-method status="PASS" signature="CheckResult(org.testng.ITestResult)[pri:0, instance:newTestCases.getRequest@551aa95a]" name="CheckResult" is-config="true" duration-ms="0" started-at="2020-03-16T14:33:49Z" finished-at="2020-03-16T14:33:49Z">
+        <test-method status="PASS" signature="ForResult(org.testng.ITestResult)[pri:0, instance:TestCases.getRequest@ea1a8d5]" name="ForResult" is-config="true" duration-ms="0" started-at="2020-03-16T16:36:46Z" finished-at="2020-03-16T16:36:46Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=schemaValidation status=SUCCESS method=getRequest.schemaValidation()[pri:2, instance:newTestCases.getRequest@551aa95a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CheckResult -->
-        <test-method status="PASS" signature="xpathValidation()[pri:3, instance:newTestCases.getRequest@551aa95a]" name="xpathValidation" duration-ms="470" started-at="2020-03-16T14:33:49Z" description="xpath Validation" finished-at="2020-03-16T14:33:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- xpathValidation -->
-        <test-method status="PASS" signature="ForResult(org.testng.ITestResult)[pri:0, instance:newTestCases.getRequest@551aa95a]" name="ForResult" is-config="true" duration-ms="0" started-at="2020-03-16T14:33:49Z" finished-at="2020-03-16T14:33:49Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=xpathValidation status=SUCCESS method=getRequest.xpathValidation()[pri:3, instance:newTestCases.getRequest@551aa95a] output={null}]]]>
+                <![CDATA[[TestResult name=schemaValidation status=SUCCESS method=getRequest.schemaValidation()[pri:2, instance:TestCases.getRequest@ea1a8d5] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ForResult -->
-        <test-method status="PASS" signature="CheckResult(org.testng.ITestResult)[pri:0, instance:newTestCases.getRequest@551aa95a]" name="CheckResult" is-config="true" duration-ms="1" started-at="2020-03-16T14:33:50Z" finished-at="2020-03-16T14:33:50Z">
+        <test-method status="PASS" signature="xpathValidation()[pri:3, instance:TestCases.getRequest@ea1a8d5]" name="xpathValidation" duration-ms="582" started-at="2020-03-16T16:36:47Z" description="JSON Xpath Validation" finished-at="2020-03-16T16:36:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- xpathValidation -->
+        <test-method status="PASS" signature="ForResult(org.testng.ITestResult)[pri:0, instance:TestCases.getRequest@ea1a8d5]" name="ForResult" is-config="true" duration-ms="0" started-at="2020-03-16T16:36:47Z" finished-at="2020-03-16T16:36:47Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=xpathValidation status=SUCCESS method=getRequest.xpathValidation()[pri:3, instance:newTestCases.getRequest@551aa95a] output={null}]]]>
+                <![CDATA[[TestResult name=xpathValidation status=SUCCESS method=getRequest.xpathValidation()[pri:3, instance:TestCases.getRequest@ea1a8d5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ForResult -->
+        <test-method status="PASS" signature="CheckResult(org.testng.ITestResult)[pri:0, instance:TestCases.getRequest@ea1a8d5]" name="CheckResult" is-config="true" duration-ms="0" started-at="2020-03-16T16:36:47Z" finished-at="2020-03-16T16:36:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=schemaValidation status=SUCCESS method=getRequest.schemaValidation()[pri:2, instance:TestCases.getRequest@ea1a8d5] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheckResult -->
-      </class> <!-- newTestCases.getRequest -->
-    </test> <!-- Login and register test cases for sanity -->
-    <test name="stop emu" duration-ms="365" started-at="2020-03-16T14:33:50Z" finished-at="2020-03-16T14:33:50Z">
-      <class name="constants.StopEmu">
-        <test-method status="PASS" signature="StopEmuWithService()[pri:0, instance:constants.StopEmu@3d99d22e]" name="StopEmuWithService" duration-ms="361" started-at="2020-03-16T14:33:50Z" finished-at="2020-03-16T14:33:50Z">
+        <test-method status="PASS" signature="CheckResult(org.testng.ITestResult)[pri:0, instance:TestCases.getRequest@ea1a8d5]" name="CheckResult" is-config="true" duration-ms="1" started-at="2020-03-16T16:36:47Z" finished-at="2020-03-16T16:36:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=xpathValidation status=SUCCESS method=getRequest.xpathValidation()[pri:3, instance:TestCases.getRequest@ea1a8d5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckResult -->
+      </class> <!-- TestCases.getRequest -->
+    </test> <!-- test cases for sanity -->
+    <test name="stop of the API package" duration-ms="267" started-at="2020-03-16T16:36:47Z" finished-at="2020-03-16T16:36:48Z">
+      <class name="helpers.ExtentStopMethod">
+        <test-method status="PASS" signature="StopEmuWithService()[pri:0, instance:helpers.ExtentStopMethod@76b0bfab]" name="StopEmuWithService" duration-ms="264" started-at="2020-03-16T16:36:47Z" finished-at="2020-03-16T16:36:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StopEmuWithService -->
-      </class> <!-- constants.StopEmu -->
-    </test> <!-- stop emu -->
+      </class> <!-- helpers.ExtentStopMethod -->
+    </test> <!-- stop of the API package -->
   </suite> <!-- Sanity Suite -->
 </testng-results>

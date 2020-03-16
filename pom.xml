@@ -7,6 +7,35 @@
 	<artifactId>BackendAutomation</artifactId>
 	<version>1.0-SNAPSHOT</version>
 
+<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
+				<configuration>
+					<!-- <source>${jdk.level}</source> <artifactId>${jdk.level}</artifactId> -->
+					<source>1.7</source>
+					<target>1.7</target>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.22.1</version>
+				<configuration>
+					<suiteXmlFiles>
+						<!-- <suiteXmlFile>${executionxml}.xml</suiteXmlFile> -->
+						 <suiteXmlFile>sanity.xml</suiteXmlFile>
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
+
+		</plugins>
+	</build>
+
+
 	<dependencies>
 
 		<!-- Test Runner -->
@@ -34,10 +63,10 @@
 
 		<!-- Log4j -->
 		<dependency>
-    <groupId>log4j</groupId>
-    <artifactId>log4j</artifactId>
-    <version>1.2.17</version>
-</dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+		</dependency>
 
 		<!-- Hamcrest -->
 		<dependency>
@@ -65,16 +94,11 @@
 			<version>20180813</version>
 		</dependency>
 
-		<!-- <dependency> <groupId>com.github.everit-org.json-schema</groupId> 
-			<artifactId>org.everit.json.schema</artifactId> <version>1.11.0</version> 
-			<exclusions> <exclusion> <groupId>org.json</groupId> <artifactId>json</artifactId> 
-			</exclusion> </exclusions> </dependency> -->
 		<dependency>
 			<groupId>org.apache.clerezza.ext</groupId>
 			<artifactId>org.json.simple</artifactId>
 			<version>0.4</version>
 		</dependency>
-
 
 		<dependency>
 			<groupId>org.everit.json</groupId>

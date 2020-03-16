@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Sanity Suite]">
-  <test thread-count="5" name="test cases for sanity(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Sanity Suite]]">
+  <test thread-count="5" name="test cases for sanity(failed)(failed)">
     <classes>
       <class name="TestCases.getRequest">
         <methods>
@@ -12,5 +12,5 @@
         </methods>
       </class> <!-- TestCases.getRequest -->
     </classes>
-  </test> <!-- test cases for sanity(failed) -->
-</suite> <!-- Failed suite [Sanity Suite] -->
+  </test> <!-- test cases for sanity(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Sanity Suite]] -->

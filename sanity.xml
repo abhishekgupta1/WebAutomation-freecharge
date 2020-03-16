@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Sanity Suite" parallel="none">
-	<test name="start emu">
+	<test name="start of the API package">
 		<classes>
-			<class name="constants.StartEmu" />
+			<class name="helpers.ExtentStartMethod" />
 		</classes>
 	</test>
-	<test parallel="none" name="Login and register test cases for sanity">
+	<test parallel="none" name="test cases for sanity">
 		<classes>
-			<class name="newTestCases.getRequest" />
+			<class name="TestCases.getRequest" />
 		</classes>
 	</test>
-	<test name="stop emu">
+	<test name="stop of the API package">
 		<classes>
-			<class name="constants.StopEmu" />
+			<class name="helpers.ExtentStopMethod" />
 		</classes>
 	</test>
 </suite>
